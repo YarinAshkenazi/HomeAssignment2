@@ -4,10 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Experience And Skills</title>
+  <link rel="stylesheet" href="assets\style\skills.css">
+  <link rel="stylesheet" href="assets\style\global.css">
 </head>
+
+
+
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <div class="page-container">
+    <header>
+      <nav >
+        <ul class="nav-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">About Myself</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="project-calculator.html">Project Calculator</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        
+      </nav>
+      <button onclick="toggleDarkMode()" id="darkModeBtn" title="Toggle Dark Mode">🌙</button>
+    </header>
+    <main><section>
+      <h1>My skills:</h1>
+      <ul>
+        <li>C# console</li>
+        <li>HTML, CSS, Java Sctipt (So So...)</li>
+        <li>SQL (Professional)</li>
+        <li>C# .NET (In progress)</li>
+        <li>Qlik Sense (Usefull SW)</li>
+        <li>Flying RC Air-Planes</li>
+        <li>Playing tennis (Not bad)</li>
+        <li>A kite Surfer</li>
+        <li>Well developed elimination skills for problem solving: whether it's eElectronic \ Software \ Mechanic</li>
+      </ul>
+
+      <h2></h2>
+    </section>
+  </main>
+    <footer>
+      <p>© 2025 <strong>Yarin Ashkenazi</strong>. All rights reserved.</p>
+    </footer>
+    <script defer src="global.js"></script>
+    <script defer src="services\global.js"></script>
+    
+  </div>
 </body>
 </html>

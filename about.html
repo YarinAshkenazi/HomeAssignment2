@@ -4,10 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
+  <link rel="stylesheet" href="assets\style\about.css">
+  <link rel="stylesheet" href="assets\style\global.css">
 </head>
+
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <div class="page-container">
+    <header>
+      <nav >
+        <ul class="nav-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html" class="active">About Myself</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project-calculator.html">Project Calculator </a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </nav>
+      <button onclick="toggleDarkMode()" id="darkModeBtn" title="Toggle Dark Mode">🌙</button>
+    </header>
+    <main>
+      <section>
+        <h1>I am Eyal Shani Ani, Who am I? Who am I? </h1>
+        <ul>A Business and Data systems Student in Ruppin Academy </ul>
+        <ul>Working full time job as a dental equipment technician</ul>
+        <ul>I spend my free time with my amazing girlfriend </ul>
+  
+    </main>
+    <footer>
+      <p>© 2025 <strong>Yarin Ashkenazi</strong>. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
+<script defer src="services\global.js"></script>
+
 </html>

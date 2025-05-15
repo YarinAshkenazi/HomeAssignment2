@@ -3,11 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets\style\home.css">
+  <link rel="stylesheet" href="assets\style\global.css">
   <title>My Portfolio</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+ 
+    <div class="page-container">
+  <header> 
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">home</a></li>
+        <li><a href="about.html">About Myself</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html"> Project Calculator</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <button onclick="toggleDarkMode()" id="darkModeBtn" title="Toggle Dark Mode">🌙</button>
+  </header>
+
+      <main>
+     <section>
+        <div class="profile_img_container">
+          <div class="hero-text">
+            <h1>Hello, I'm Yarin Ashkenazi</h1>
+            <p>I will make your dreamed website come true</p>
+            <a href="skills.html" target="_blank">Discover my skills</a>
+          </div>
+          <div class="profile_img">
+            <img src="assets\imgs\Profile.jpg" alt="Profile Photo" />
+          </div>
+        </div>
+      </section>
+      <section>
+          <div class="profile_img_container">
+            
+            <p>📧 <a href="mailto:yarina@new-image.co.il">  Send Email</a></p>
+            <p>📞 <a href="tel:+972501234567">+97255-6668879</a></p>
+            <p>🔗 <a href="https://linkedin.com/in/yarin" target="_blank">LinkedIn</a></p>
+          </div>
+      </section>
+
+
+      <section>
+        <div class="profile_img_container">
+          <div class="hero-text">
+            <h1> My first unsuccessful project</h1>
+            <a href="https://yarinashkenazi.github.io/NoamClass/" target="_blank"> Visit that --> </a>
+          </div>
+          <div class="profile_img">
+            <img src="assets\imgs\proj.jpg" alt="Profile Photo" />
+          </div>
+        </div>
+
+
+      </main>
+
+      <footer>
+        <p>© 2025 <strong>Yarin Ashkenazi</strong>. All rights reserved.</p>
+      </footer>
+   
+
+
+
+  <script defer src="services\global.js"></script>
+
 </body>
 </html>
