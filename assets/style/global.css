@@ -8,6 +8,15 @@ html, body {
     padding-top: 100px;
   }
   
+  .dark-mode-toggle {
+  background-color: transparent; 
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 38px;
+}
   header {
     width: 100%;
     background-color: var(--primary-color);
