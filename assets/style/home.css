@@ -69,3 +69,31 @@
     padding: 50px;
     flex-wrap: wrap; 
   }
+
+
+ .container1 {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+  padding: 20px;                 
+}
+
+   .container2 {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+  padding: 20px;                 
+}
+
+
+
+  .box  {
+   font-size: 50px;
+   flex: 1;                      
+   border: 1px solid #000;
+   padding: 20px;
+   text-align: center;
+   border-radius: 10px;
+   background-color: var(--bg-color);
+   border: none;
+      }
