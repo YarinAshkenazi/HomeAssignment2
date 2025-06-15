@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const siteType = form.siteType.value;
       const pages = parseInt(form.pages.value, 10);
       const isCustom = form.customDesign.value === "yes";
-  
+      let pagePrice = 0;
+      let customPrice = 0;
       if (isNaN(pages) || pages < 1 || pages > 10) {
         result.textContent = "Please enter a valid number of pages (1–10).";
         return;
@@ -24,14 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
           basePrice = 2000;
           break;
         case "blog":
-          basePrice = 800;
+          basePrice = 1500;
           break;
         default:
           basePrice = 0;
       }
-  
-      const pagePrice = pages * 200;
-      const customPrice = isCustom ? 500 : 0;
+      if(pages >= 2 && pages <= 10) {
+        pagePrice = (pages * 200)-200;
+      }
+      else {pagePrice = 0;}
+      customPrice = isCustom ? 1000 : 0;
   
       const total = basePrice + pagePrice + customPrice;
   
