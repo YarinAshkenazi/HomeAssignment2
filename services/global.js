@@ -3,26 +3,10 @@ function toggleMenu() {
   navMenu.classList.toggle("open");
 }
 
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+  const btn = document.getElementById("toggle-dark");
 
-  const isDark = document.body.classList.contains("dark-mode");
-  localStorage.setItem("darkMode", isDark ? "on" : "off");
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
 
-  const iconBtn = document.getElementById("darkModeBtn");
-  if (iconBtn) {
-    iconBtn.innerHTML = isDark ? "<i class='fas fa-sun'></i>" : "<i class='fas fa-moon'></i>";
-  }
-}
 
-window.addEventListener("DOMContentLoaded", () => {
-  const isDark = localStorage.getItem("darkMode") === "on";
-  if (isDark) {
-    document.body.classList.add("dark-mode");
-  }
-
-  const iconBtn = document.getElementById("darkModeBtn");
-  if (iconBtn) {
-    iconBtn.innerHTML = isDark ? "<i class='fas fa-sun'></i>" : "<i class='fas fa-moon'></i>";
-  }
-});
