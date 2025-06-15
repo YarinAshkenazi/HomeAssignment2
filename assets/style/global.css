@@ -1,8 +1,8 @@
 :root {
     --bg-color: white;
-    --text-color: #111;
+    --text-color: black;
     --primary-color: #0d6efd;
-    --footer-bg: #f1f1f1;
+    --footer-bg: white;
   }
 
 
@@ -128,9 +128,9 @@ button {
 
 
   body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #f1f1f1;
-    --footer-bg: #1e1e1e;
+    --bg-color: black;
+    --text-color: white;
+    --footer-bg: black;
   }
 
   body {
