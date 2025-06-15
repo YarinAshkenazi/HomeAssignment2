@@ -14,6 +14,7 @@
 
 
 </head>
+
 <body>
   <div class="page-container">
   <header>
@@ -29,37 +30,48 @@
     <button class="dark-mode-toggle" onclick="toggleDarkMode()" id="darkModeBtn" title="Toggle Dark Mode"></button>
   </header>
   <main>
-    <h1>Calculate your dreamed website</h1>
-    <form id="quote-form">
+   <div class="subtitle">Calculate your dreamed website</div>
+   
+
+    <div class="form-box" style="text-align: center;"><i class="fas fa-chevron-down"></i>Fill out the form below to get an estimated price for your website project <i class="fas fa-chevron-down"></i></div>
+    <div class="error-message" id="error-message"></div>
+   <form  id="quote-form">
+    <div class="form-container">
+    <div class="form-box">
       <label for="siteType">Site Type</label>
       <select id="siteType" name="siteType" required>
         <option value="business">Business Site</option>
         <option value="store">Online Store</option>
         <option value="blog">Blog</option>
       </select>
-  
+    </div>
+    </div>
+    <div class="form-container">
+    <div class="form-box">
       <label for="pages"> Number of pages (1–10):</label>
       <input type="number" id="pages" name="pages" min="1" max="10" required>
-  
+    </div>
+    </div>
+    <div class="form-container">
+    <div class="form-box">
       <label>Need custom design?</label>
       <label><input type="radio" name="customDesign" value="yes" required>Yes</label>
       <label><input type="radio" name="customDesign" value="no"> No</label>
-  
-      <br><br>
-      <button type="submit">Show price</button>
-      <button type="reset">Reset Selection</button>
+    </div>
+    </div>
+    <div class="form-container">
+    <div class="form-box">
+      <button type="submit" >Show price</button>
+      <button type="reset" >Reset Selection</button>
+      </div>
+    
+    <div class="form-box"><p id="result"></p></div>
+    </div>
     </form>
-  
-    <p id="result"></p>
   </main>
  
   <footer>
     <p>© 2025 <strong>Yarin Ashkenazi</strong>. All rights reserved.</p>
   </footer>
-</div>
-
 </body>
-
-
-
 </html>

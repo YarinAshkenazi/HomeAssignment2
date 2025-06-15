@@ -19,17 +19,13 @@
     
   }
   
-.subtitle {
-  text-align: center;
-  font-size: 1.5em;
-  margin: 20px 0;
-  font-weight: bold;
-}
+
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 10px;
+  
 }
 .grid-item {
   background-color: var(--bg-color);
