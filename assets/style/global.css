@@ -67,41 +67,33 @@ html, body {
   .hamburger {
     display:none;
     font-size: 24px;
-    color: white;
+    color: var(--bg-color);
     cursor: pointer;
   }
+
 
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
     background-color: var(--primary-color);
-    position: absolute;
-    top: 60px; 
-    right: 0;
+    position: fixed; 
+    top: 100px;      
+    left: 0;
     width: 100vw;
     text-align: center;
     z-index: 999;
+    padding: 20px 0;
   }
 
-.nav-links.open {
+  .nav-links.open {
     display: flex;
   }
 
-.hamburger {
+  .hamburger {
     display: block;
   }
 }
-
-  footer {
-  width: 100%;
-  background-color: var(--primary-color);
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
   .page-container {
     display: flex;
@@ -149,3 +141,11 @@ button {
   color: var(--text-color);
 }
 
+  footer {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
