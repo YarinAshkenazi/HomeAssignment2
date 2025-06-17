@@ -1,22 +1,17 @@
-
-  .hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    
-  }
-  
   img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto; 
   }
- 
 
-  .profile_img_container {
+   .profile_img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .container1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,46 +19,14 @@
     padding: 20px;
     flex-wrap: wrap; 
   }
-  
-  .hero-text {
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .profile_img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-  }
-  
 
-  .first_p
-  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
-    flex-wrap: wrap; 
-  }
-
-
- .container1 {
-  display: flex;
-  justify-content: space-between; 
-  gap: 20px; 
-  padding: 20px;                 
-}
-
-   .container2 {
+    .container2 {
   display: flex;
   justify-content: space-between; 
   gap: 20px; 
   padding: 20px; 
   flex-wrap: wrap                
 }
-
-
 
   .box  {
    font-size: 50px;
@@ -74,3 +37,14 @@
    background-color: transparent;
    border: none;
       }
+
+  .container1-text {
+    max-width: 400px;
+    text-align: center;
+  }
+  
+
+  
+ 
+
+ 

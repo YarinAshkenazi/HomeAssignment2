@@ -3,13 +3,20 @@ html, body {
     margin: 0;
   }
 
-  main {
+main {
     flex: 1;
     padding-top: 100px;
   }
-  
 
-  header {
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+  }
+
+header {
     width: 100%;
     background-color: var(--primary-color);
     height: 100px;
@@ -22,7 +29,7 @@ html, body {
   }
 
 
-  nav {
+nav {
     width: 100%;
     display:flex;
     position: relative;
@@ -31,13 +38,13 @@ html, body {
     padding: 0 20px;
   }
   
-  .nav-links {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -45,17 +52,17 @@ html, body {
     padding: 0;
   }
   
-  nav a {
+nav a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
   }
   
-  nav a.active {
+nav a.active {
     border-bottom: 2px solid yellow;
   }
   
-  .hamburger {
+.hamburger {
     display:none;
     font-size: 40px;
     color: var(--bg-color);
@@ -77,16 +84,16 @@ html, body {
     padding: 20px 0;
   }
 
-  .nav-links.open {
+.nav-links.open {
     display: flex;
   }
 
-  .hamburger {
+.hamburger {
     display: block;
   }
 }
 
-  .page-container {
+.page-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -108,21 +115,7 @@ button {
   cursor: pointer;
 }
 
-
-
-
-
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    
-  }
-
-
-
-  footer {
+footer {
   width: 100%;
   background-color: var(--primary-color);
   height: 100px;
