@@ -68,7 +68,6 @@
   .box  {
    font-size: 50px;
    flex: 1;                      
-   border: 1px solid #000;
    padding: 20px;
    text-align: center;
    border-radius: 10px;

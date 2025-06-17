@@ -1,0 +1,22 @@
+   :root {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: #0d6efd;
+    --footer-bg: white;
+  }
+  
+  body.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+    --footer-bg: black;
+  }
+
+
+
+  #toggle-theme {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
+}
