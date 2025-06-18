@@ -25,7 +25,7 @@
   justify-content: space-between; 
   gap: 20px; 
   padding: 20px; 
-  flex-wrap: wrap                
+  flex-wrap: wrap;              
 }
 
   .box  {
@@ -44,7 +44,14 @@
   }
   
 
-  
- 
+  .fa-phone {
+    color: var(--icon-color);
+  }
 
- 
+  .fa-envelope {
+    color: var(--icon-color);
+  }
+
+    .fa-linkedin {
+    color: var(--icon-color);
+  }

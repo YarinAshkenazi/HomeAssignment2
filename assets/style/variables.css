@@ -1,17 +1,16 @@
    :root {
-    --bg-color: white;
-    --text-color: black;
-    --primary-color: #0d6efd;
-    --footer-bg: white;
+    --bg-color: #FFF8DC;
+    --text-color: black ;
+    --primary-color: #F0E68C;
+    --icon-color: #DC143C;
   }
   
   body.dark-mode {
-    --bg-color: black;
+    --bg-color: #1E1E1E;
     --text-color: white;
-    --footer-bg: black;
+    --primary-color: navy;
+    --icon-color: ;
   }
-
-
 
   #toggle-theme {
   background: none;
